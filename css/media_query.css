@@ -116,7 +116,7 @@ article .menu-alt {
 
 article .menu ul {
     display: flex;
-    gap: 40px;
+    gap: 15px;
     padding: 3px;
 }
 
