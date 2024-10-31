@@ -1,0 +1,357 @@
+@import 'fonts.css';
+@import 'media_query.css';
+@import '../nouislider/css/mystyles.css';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* N A V B A R */
+nav {
+    height: 30px;
+    background-color: #fff;
+    padding: 1rem 5rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.158);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .left {
+    display: flex;
+    gap: 100px;
+}
+
+nav .menu ul {
+    display: flex;
+    gap: 40px;
+    padding: 3px;
+}
+
+nav .menu ul li {
+    display: flex;
+    padding: 3px;
+}
+
+nav .menu ul li a {
+    text-decoration: none;
+    color: rgb(92, 92, 92);
+}
+
+nav .menu ul li a.active {
+    color: #000 !important;
+
+}
+
+nav .right {
+    display: flex;
+    gap: 15px;
+}
+
+nav .right .input-mask {
+    display: flex;
+    justify-content: space-between;
+
+    width: 300px;
+    border: 1px solid rgba(128, 128, 128, 0.247);
+    border-radius: 30px;
+
+    padding: 10px;
+}
+
+nav .right .input-mask input {
+    background: transparent;
+    border: none;
+    width: 100%;
+    height: 20px;
+    margin-top: -7px;
+}
+
+nav .right .input-mask button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding-left: 3px;
+    border-left: 1px solid rgba(128, 128, 128, 0.247);
+    margin-top: -4px;
+}
+
+nav .right .user-profile img {
+    border-radius: 100% !important;
+}
+
+nav .right .cart {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: rgba(196, 196, 196, 0.438);
+    ;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    display: flex;
+}
+
+
+/* A R T I C L E */
+article {
+    background: #ffffffb2;
+    backdrop-filter: blur(10px);
+    width: 400px;
+    height: calc(95vh - 30px);
+    padding: 20px 0px 0 0px;
+    overflow-y: scroll;
+    border-right: 1px solid rgba(128, 128, 128, 0.158);
+    z-index: 1000;
+}
+
+article .head {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px 20px 60px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.158);
+}
+
+article .categories {
+    /* margin-top: 50px !important; */
+    padding: 20px 40px 20px 60px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.158);
+}
+
+article .categories ul li {
+    list-style-type: none;
+}
+
+article .categories ul li a {
+    text-decoration: none;
+    color: rgb(92, 92, 92) !important;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0;
+}
+
+article .price .head {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px 20px 60px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.158);
+}
+
+article .price .body {
+    padding: 20px 40px 20px 60px;
+    margin-top: 25px;
+}
+
+article .price .body .range-values {
+    display: flex;
+    justify-content: space-between;
+}
+
+article .price .body .range-values span {
+    margin-top: 20px;
+    padding: 3px 15px;
+    border: 1px solid rgba(165, 165, 165, 0.438);
+    border-radius: 10px;
+}
+
+article .colors {
+    margin-top: 25px;
+}
+
+article .colors .head {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px 20px 60px;
+    border-top: 1px solid rgba(128, 128, 128, 0.158);
+}
+
+article .colors .body {
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 10px 20px 60px;
+}
+
+article .colors .body .color-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article .colors .body .color-item .color {
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(196, 196, 196, 0.438);
+}
+
+article .sizes {
+    /* margin-top: 75px; */
+    margin-bottom: 300px;
+}
+
+article .sizes .head {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(196, 196, 196, 0.438);
+    padding: 20px 40px 20px 60px;
+}
+
+article .sizes .body {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px 10px 20px 60px;
+}
+
+article .sizes .body .size-item {
+    width: 50px;
+    text-align: center;
+    padding: 2px 5px;
+    border: 1px solid rgba(165, 165, 165, 0.438);
+    border-radius: 5px;
+}
+
+
+/* M A I N */
+main {
+    width: 100%;
+    height: calc(96.9vh - 30px);
+    padding: 30px 10px 5px 50px;
+    overflow-y: scroll;
+}
+
+main .body {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+main .body .card {
+    width: 250px;
+}
+
+main .body .card-img {
+    width: 100%;
+    height: 300px;
+    border: 1px solid rgba(128, 128, 128, 0.158);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+main .body .card img {
+    width: 100%;
+    height: auto;
+}
+
+main .body .card .card-icon .icon {
+    position: sticky;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    background-color: #fff;
+    border-radius: 100%;
+    padding: 5px;
+    margin-left: 10px;
+    margin-top: -290px !important;
+}
+
+main .body .card .card-content {
+    display: flex;
+    padding: 5px 3px;
+    margin-top: 10px;
+}
+
+main .body .card .card-content .left {
+    overflow: hidden;
+}
+
+main .body .card .card-content .left span:nth-child(2) {
+    color: rgba(98, 98, 98);
+}
+
+main .body .card .card-content .right span {
+    background-color: rgba(128, 128, 128, 0.158);
+    padding: 1px 8px;
+    border-radius: 5px;
+}
+
+/* G E R A L */
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 180px;
+    display: inline-block;
+}
+
+i {
+    color: rgb(92, 92, 92) !important;
+}
+
+a {
+    color: initial;
+    text-decoration: none;
+}
+
+.purple {
+    background-color: #8333d7;
+}
+
+.black {
+    background-color: #111;
+}
+
+.red {
+    background-color: #ef4a4e;
+}
+
+.orange {
+    background-color: #f26f29;
+}
+
+.blue {
+    background-color: #365efb;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.brown {
+    background-color: #d68035;
+}
+
+.green {
+    background-color: #44b94e;
+}
+
+.yellow {
+    background-color: #f6c133;
+}
+
+.grey {
+    background-color: #adb7d0;
+}
+
+.pink {
+    background-color: #f0287e;
+}
+
+.blue-sky {
+    background-color: #33b0f2;
+}

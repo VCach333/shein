@@ -1,0 +1,136 @@
+/* Estilos para dispositivos móveis (largura máxima de 767px) */
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    article#sidenav {
+        transition: .5s;
+        margin-left: -400px !important;
+        position: absolute;
+        width: 90% !important;
+        visibility: hidden !important;
+    }
+
+    main .body {
+        justify-content: center;
+    }
+
+    .show-mobile-only { visibility: visible !important; }
+    .hide-mobile { visibility: hidden !important; width: 0 !important; height: 0 !important; padding: 0 !important; }
+
+    #btn_sidenav {
+        position: absolute;
+        margin-top: -10px;
+        margin-left: -30px;
+        background-color: #fff;
+        border: 1px solid rgba(128, 128, 128, 0.158);
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 10001;
+    }
+
+    #bars_sidenav {
+        cursor: pointer;
+    }
+}
+
+/* Estilos para tablets (largura entre 768px e 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    main .body {
+        justify-content: center;
+    }
+    
+    article#sidenav {
+        visibility: visible !important;
+    }
+
+    .show-mobile-only { visibility: hidden !important; width: 0 !important; height: 0 !important; padding: 0 !important; }
+    .hide-tablet { visibility: hidden !important; width: 0 !important; height: 0 !important; padding: 0 !important; }
+
+}
+
+/* Estilos para desktops (largura mínima de 1025px) */
+@media only screen and (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+
+    main .body {
+        justify-content: start;
+    }
+
+    article#sidenav {
+        visibility: visible !important;
+    }
+
+    .show-mobile-only { visibility: hidden !important; width: 0 !important; height: 0 !important; padding: 0 !important; }
+    .hide-desktop { visibility: hidden !important; width: 0 !important; height: 0 !important; padding: 0 !important; }
+}
+
+article .search-alt {
+    width: 80% !important;
+    display: flex;
+    justify-content: center;
+    padding: 0px 10px 20px 40px;
+
+}
+
+article .input-mask {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.247);
+    
+}
+
+article .input-mask input {
+    background: transparent;
+    border: none;
+}
+
+article .input-mask button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+article .menu-alt {
+    width: 80% !important;
+    display: flex;
+    justify-content: center;
+    padding: 0px 10px 20px 40px;
+
+}
+
+article .menu ul {
+    display: flex;
+    gap: 40px;
+    padding: 3px;
+}
+
+article .menu ul li {
+    display: flex;
+    padding: 3px;
+}
+
+article .menu ul li a {
+    text-decoration: none;
+    color: rgb(92, 92, 92);
+}
+
+article .menu ul li a.active {
+    color: #000 !important;
+
+}

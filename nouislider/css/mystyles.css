@@ -1,0 +1,26 @@
+.noUi-horizontal {
+    height: 7px !important;
+}
+
+.noUi-connects {
+    background-color: rgba(185, 185, 185, 0.425) !important;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 100% !important;
+
+    background-color: #8c34f8 !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.noUi-connect {
+    background-color: #8c34f8 !important;
+}
+
+.noUi-handle::before,
+.noUi-handle::after {
+    content: none !important;
+}

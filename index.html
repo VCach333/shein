@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHEIN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="nouislider/css/nouislider.min.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="left">
+        <div class="logo">
+          <span class="font-medium size-xlarge">SHEIN</span>
+        </div>
+
+        <div class="menu font-regular hide-mobile">
+          <ul class="size-medium">
+            <li><a class="active" href="">Loja</a></li>
+            <li><a href="">Mulher</a></li>
+            <li><a href="">Homem</a></li>
+            <li><a href="">Criancas</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="input-mask hide-mobile hide-tablet">
+          <input type="search" placeholder="pesquise aqui..." />
+          <button type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+
+        <div class="user-profile">
+          <img src="img/users/vladmir.jpg" width="30px" />
+        </div>
+
+        <div class="cart hide-mobile">
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+
+        <div id="bars_sidenav" class="cart hide-tablet hide-desktop">
+          <i id="bars_sidenav_icon" class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-content">
+      <article id="sidenav">
+        <div class="menu-alt hide-tablet hide-desktop">
+          <div class="menu font-regular">
+            <ul class="size-medium">
+              <li><a class="active" href="">Loja</a></li>
+              <li><a href="">Mulher</a></li>
+              <li><a href="">Homem</a></li>
+              <li><a href="">Criancas</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="search-alt hide-desktop">
+          <div class="input-mask">
+            <input type="search" placeholder="pesquise aqui..." />
+            <button type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="head">
+          <div class="title font-semibold size-large">Filtro</div>
+          <div class="icon">
+            <i class="fas fa-sliders-h fa-rotate-90"></i>
+          </div>
+        </div>
+
+        <div class="categories">
+          <ul>
+            <li>
+              <a href="">
+                <span class="item">Calcas</span>
+                <span class="item">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="item">Blusas</span>
+                <span class="item">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="item">Blaise</span>
+                <span class="item">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="item">Tenis</span>
+                <span class="item">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="item">Salto Alto</span>
+                <span class="item">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="item">Interiores</span>
+                <span class="item">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="price">
+          <div class="head">
+            <div class="title font-semibold size-large">Preco</div>
+            <div class="icon">
+              <i class="fas fa-angle-up"></i>
+            </div>
+          </div>
+          <div class="body">
+            <div id="slider-non-linear-step"></div>
+
+            <div class="range-values font-regular size-medium">
+              <span id="range-min"></span>
+              <span id="range-max"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="colors">
+          <div class="head">
+            <div class="title font-semibold size-large">Cores</div>
+            <div class="icon">
+              <i class="fas fa-angle-up"></i>
+            </div>
+          </div>
+          <div class="body">
+            <div class="color-item">
+              <div class="color purple"></div>
+              <span class="color-name size-xsmall">Purpura</span>
+            </div>
+            <div class="color-item">
+              <div class="color black"></div>
+              <span class="color-name size-xsmall">Preto</span>
+            </div>
+            <div class="color-item">
+              <div class="color red"></div>
+              <span class="color-name size-xsmall">Vermelho</span>
+            </div>
+            <div class="color-item">
+              <div class="color orange"></div>
+              <span class="color-name size-xsmall">Laranja</span>
+            </div>
+            <div class="color-item">
+              <div class="color blue"></div>
+              <span class="color-name size-xsmall">Azul</span>
+            </div>
+            <div class="color-item">
+              <div class="color white"></div>
+              <span class="color-name size-xsmall">Branco</span>
+            </div>
+            <div class="color-item">
+              <div class="color brown"></div>
+              <span class="color-name size-xsmall">Castanho</span>
+            </div>
+            <div class="color-item">
+              <div class="color green"></div>
+              <span class="color-name size-xsmall">Verde</span>
+            </div>
+            <div class="color-item">
+              <div class="color yellow"></div>
+              <span class="color-name size-xsmall">Amarelo</span>
+            </div>
+            <div class="color-item">
+              <div class="color grey"></div>
+              <span class="color-name size-xsmall">Cinza</span>
+            </div>
+            <div class="color-item">
+              <div class="color pink"></div>
+              <span class="color-name size-xsmall">Rosa</span>
+            </div>
+            <div class="color-item">
+              <div class="color blue-sky"></div>
+              <span class="color-name size-xsmall">Azul Ceu</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sizes">
+          <div class="head">
+            <div class="title font-semibold size-large">Tamanhos</div>
+            <div class="icon">
+              <i class="fas fa-angle-up"></i>
+            </div>
+          </div>
+          <div class="body">
+            <a href="">
+              <div class="size-item">XXS</div>
+            </a>
+            <a href="">
+              <div class="size-item">XL</div>
+            </a>
+            <a href="">
+              <div class="size-item">XS</div>
+            </a>
+            <a href="">
+              <div class="size-item">S</div>
+            </a>
+            <a href="">
+              <div class="size-item">M</div>
+            </a>
+            <a href="">
+              <div class="size-item">L</div>
+            </a>
+            <a href="">
+              <div class="size-item">XXL</div>
+            </a>
+            <a href="">
+              <div class="size-item">3XL</div>
+            </a>
+            <a href="">
+              <div class="size-item">4XL</div>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <main>
+        <div id="btn_sidenav" class="show-mobile-only">
+          <i id="btn_sidenav_icon" class="fas fa-sliders-h fa-rotate-90"></i>
+        </div>
+
+        <div class="head">
+          <h2 class="size-large font-semibold">Roupa de Mulher</h2>
+        </div>
+
+        <div class="body">
+          <div class="card">
+            <div class="card-img">
+              <img src="img/corpo/img-1.jpg" />
+            </div>
+            <div class="card-icon">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="left">
+                <span class="font-semibold size-medium truncate"
+                  >Camisa Social Vermelha</span
+                >
+                <span class="font-regular-italic size-small">Camisas</span>
+              </div>
+
+              <div class="right">
+                <span class="font-semibold size-medium number_format"
+                  >2500</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="img/corpo/img-2.jpg" />
+            </div>
+            <div class="card-icon">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="left">
+                <span class="font-semibold size-medium truncate"
+                  >Camisa Social Vermelha</span
+                >
+                <span class="font-regular-italic size-small">Camisas</span>
+              </div>
+
+              <div class="right">
+                <span class="font-semibold size-medium number_format"
+                  >2500</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="img/corpo/img-3.jpg" />
+            </div>
+            <div class="card-icon">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="left">
+                <span class="font-semibold size-medium truncate"
+                  >Camisa Social Vermelha</span
+                >
+                <span class="font-regular-italic size-small">Camisas</span>
+              </div>
+
+              <div class="right">
+                <span class="font-semibold size-medium number_format"
+                  >2500</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="img/corpo/img-4.jpg" />
+            </div>
+            <div class="card-icon">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="left">
+                <span class="font-semibold size-medium truncate"
+                  >Camisa Social Vermelha</span
+                >
+                <span class="font-regular-italic size-small">Camisas</span>
+              </div>
+
+              <div class="right">
+                <span class="font-semibold size-medium number_format"
+                  >2500</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="img/corpo/img-5.jpg" />
+            </div>
+            <div class="card-icon">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="left">
+                <span class="font-semibold size-medium truncate"
+                  >Camisa Social Vermelha</span
+                >
+                <span class="font-regular-italic size-small">Camisas</span>
+              </div>
+
+              <div class="right">
+                <span class="font-semibold size-medium number_format"
+                  >2500</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="img/corpo/img-6.jpg" />
+            </div>
+            <div class="card-icon">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="left">
+                <span class="font-semibold size-medium truncate"
+                  >Camisa Social Vermelha</span
+                >
+                <span class="font-regular-italic size-small">Camisas</span>
+              </div>
+
+              <div class="right">
+                <span class="font-semibold size-medium number_format"
+                  >2500</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="img/corpo/img-7.jpg" />
+            </div>
+            <div class="card-icon">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="left">
+                <span class="font-semibold size-medium truncate"
+                  >Camisa Social Vermelha</span
+                >
+                <span class="font-regular-italic size-small">Camisas</span>
+              </div>
+
+              <div class="right">
+                <span class="font-semibold size-medium number_format"
+                  >2500</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="img/corpo/img-8.jpg" />
+            </div>
+            <div class="card-icon">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="left">
+                <span class="font-semibold size-medium truncate"
+                  >Camisa Social Vermelha</span
+                >
+                <span class="font-regular-italic size-small">Camisas</span>
+              </div>
+
+              <div class="right">
+                <span class="font-semibold size-medium number_format"
+                  >2500</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="img/corpo/img-1.jpg" />
+            </div>
+            <div class="card-icon">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="left">
+                <span class="font-semibold size-medium truncate"
+                  >Camisa Social Vermelha</span
+                >
+                <span class="font-regular-italic size-small">Camisas</span>
+              </div>
+
+              <div class="right">
+                <span class="font-semibold size-medium number_format"
+                  >2500</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="img/corpo/img-2.jpg" />
+            </div>
+            <div class="card-icon">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="left">
+                <span class="font-semibold size-medium truncate"
+                  >Camisa Social Vermelha</span
+                >
+                <span class="font-regular-italic size-small">Camisas</span>
+              </div>
+
+              <div class="right">
+                <span class="font-semibold size-medium number_format"
+                  >2500</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="img/corpo/img-3.jpg" />
+            </div>
+            <div class="card-icon">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="left">
+                <span class="font-semibold size-medium truncate"
+                  >Camisa Social Vermelha</span
+                >
+                <span class="font-regular-italic size-small">Camisas</span>
+              </div>
+
+              <div class="right">
+                <span class="font-semibold size-medium number_format"
+                  >2500</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="img/corpo/img-4.jpg" />
+            </div>
+            <div class="card-icon">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="left">
+                <span class="font-semibold size-medium truncate"
+                  >Camisa Social Vermelha</span
+                >
+                <span class="font-regular-italic size-small">Camisas</span>
+              </div>
+
+              <div class="right">
+                <span class="font-semibold size-medium number_format"
+                  >2500</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="img/corpo/img-5.jpg" />
+            </div>
+            <div class="card-icon">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="left">
+                <span class="font-semibold size-medium truncate"
+                  >Camisa Social Vermelha</span
+                >
+                <span class="font-regular-italic size-small">Camisas</span>
+              </div>
+
+              <div class="right">
+                <span class="font-semibold size-medium number_format"
+                  >2500</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="nouislider/js/nouislider.min.js"></script>
+    <script>
+      // FORMATAÇÃO DE NÚMBEROS EM ESCALA GOLBAL
+      var money_number = new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "AOA",
+      });
+
+      var number_format_count =
+        document.getElementsByClassName("number_format").length;
+
+      if (number_format_count > 0) {
+        for (let cont = 0; cont < number_format_count; cont++) {
+          document.getElementsByClassName("number_format")[cont].innerText =
+            money_number
+              .format(
+                document.getElementsByClassName("number_format")[cont]
+                  .textContent
+              )
+              .toString()
+              .replace("AOA", "")
+              .replace(".00", "");
+        }
+      }
+    </script>
+
+    <script>
+      var nonLinearStepSlider = document.getElementById(
+        "slider-non-linear-step"
+      );
+
+      noUiSlider.create(nonLinearStepSlider, {
+        start: [10000, 50000],
+        snap: true,
+        connect: true,
+        range: {
+          min: [0],
+          "0%": [500, 500],
+          "10%": [1000, 2000],
+          "20%": [5000, 10000],
+          "30%": [10000, 20000],
+          "40%": [25000, 50000],
+          "50%": [30000, 60000],
+          "60%": [45000, 90000],
+          "70%": [60000, 120000],
+          "80%": [80000, 180000],
+          "90%": [100000, 200000],
+          "100%": [150000, 300000],
+          max: [300000],
+        },
+      });
+
+      var nonLinearStepSliderValueElement = document.getElementById(
+        "slider-non-linear-step-value"
+      );
+
+      nonLinearStepSlider.noUiSlider.on("update", function (values) {
+        // nonLinearStepSliderValueElement.innerHTML = values.join(' - ');
+        var min_max = values.toString().split(",");
+
+        document.getElementById("range-min").innerText = money_number
+          .format(min_max[0])
+          .toString()
+          .replace("AOA", "")
+          .replace(".00", "");
+        document.getElementById("range-max").innerText = money_number
+          .format(min_max[1])
+          .toString()
+          .replace("AOA", "")
+          .replace(".00", "");
+      });
+    </script>
+
+    <script>
+      var status_sidenav = 1;
+
+      document.getElementById("bars_sidenav").onclick = () => {
+        document.getElementById("btn_sidenav").click();
+      };
+
+      document.getElementById("btn_sidenav").onclick = () => {
+        if (status_sidenav % 2 == 1) {
+          document
+            .getElementById("sidenav")
+            .setAttribute(
+              "style",
+              "margin-left: 0 !important;position: absolute;width: 90% !important;visibility: visible !important;"
+            );
+          document
+            .getElementById("btn_sidenav_icon")
+            .setAttribute("class", "fas fa-times");
+          document
+            .getElementById("bars_sidenav_icon")
+            .setAttribute("class", "fas fa-times");
+          status_sidenav++;
+        } else if (status_sidenav % 2 == 0) {
+          document
+            .getElementById("sidenav")
+            .setAttribute(
+              "style",
+              "margin-left: -400px !important;position: absolute;width: 90% !important;visibility: hidden !important;"
+            );
+          document
+            .getElementById("btn_sidenav_icon")
+            .setAttribute("class", "fas fa-sliders-h fa-rotate-90");
+          document
+            .getElementById("bars_sidenav_icon")
+            .setAttribute("class", "fas fa-bars");
+          status_sidenav++;
+        }
+      };
+    </script>
+  </body>
+</html>
